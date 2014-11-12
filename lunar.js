@@ -63,7 +63,7 @@
         this.day = this.date.getDate();
         //星期
         this.week = this.date.getDay();
-        //公历闰年
+        //公历闰年(在我有限的生命里,这样算是对的)
         this.isLeap = this.year % 4 === 0;
 
         //闰月标记
@@ -248,12 +248,12 @@
         return lunarDay;
 
 
-        var lunarDay = (day < 11) ? "初" : ((day < 20) ? "十" : ((day < 30) ? "廿" : "卅"));
-        if (day % 10 != 0 || day == 10) {
-            lunarDay += this.NumString.charAt((day - 1) % 10);
-        }
+        //var lunarDay = (day < 11) ? "初" : ((day < 20) ? "十" : ((day < 30) ? "廿" : "卅"));
+        //if (day % 10 != 0 || day == 10) {
+        //    lunarDay += this.NumString.charAt((day - 1) % 10);
+        //}
 
-        return lunarDay;
+        //return lunarDay;
     };
 
     Lunar.prototype.toWeekDay = function (week) {
