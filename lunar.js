@@ -64,7 +64,7 @@
         //星期
         this.week = this.date.getDay();
         //公历闰年(在我有限的生命里,这样算是对的)
-        this.isLeap = this.year % 4 === 0;
+        this.isLeap = this.year % 4 === 0; //简化计算闰年, 1900-2049这样算是没问题的
 
         //闰月标记
         this.isLeapMonth = lunar.isLeap; //表示当月是否是农历的闰月
