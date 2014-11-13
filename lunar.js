@@ -19,13 +19,13 @@
     }
 
     //农历相关的中文字符串
-    Lunar.prototype.HsString = '甲乙丙丁戊己庚辛壬癸';
-    Lunar.prototype.EbString = '子丑寅卯辰巳午未申酉戌亥';
-    Lunar.prototype.NumString = "一二三四五六七八九十";
-    Lunar.prototype.MonString = "正二三四五六七八九十冬腊";
-    Lunar.prototype.YearString = "零一二三四五六七八九";
-    Lunar.prototype.Animals = "鼠牛虎兔龙蛇马羊猴鸡狗猪";
-    Lunar.prototype.Weeks = "日一二三四五六";
+    Lunar.prototype.HsString = '甲乙丙丁戊己庚辛壬癸'.split(''); //prototype中,只计算一次,split性能损失小
+    Lunar.prototype.EbString = '子丑寅卯辰巳午未申酉戌亥'.split('');
+    Lunar.prototype.NumString = "一二三四五六七八九十".split('');
+    Lunar.prototype.MonString = "正二三四五六七八九十冬腊".split('');
+    Lunar.prototype.YearString = "零一二三四五六七八九".split('');
+    Lunar.prototype.Animals = "鼠牛虎兔龙蛇马羊猴鸡狗猪".split('');
+    Lunar.prototype.Weeks = "日一二三四五六".split('');
     Lunar.prototype.WeekStart = "星期";
     Lunar.prototype.CalendarData = [
         0x04bd8, 0x04ae0, 0x0a570, 0x054d5, 0x0d260, 0x0d950, 0x16554, 0x056a0, 0x09ad0, 0x055d2,//1900-1909
